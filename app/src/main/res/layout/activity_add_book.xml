@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/addBookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Book"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="12dp"
+        />
+
+    <EditText
+        android:id="@+id/bookTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        android:hint="Title"
+        android:padding="15dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/bookAuthorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        android:hint="Author"
+        android:padding="15dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="18sp"/>
+
+    <!-- Champ pour le prix du livre -->
+    <EditText
+        android:id="@+id/bookPriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        android:hint="Price"
+        android:padding="15dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/bookCategoryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        android:hint="Category"
+        android:padding="15dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/selectCoverButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Choose a cover"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/loginbtn"
+        android:backgroundTint="@color/red"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/bookCoverImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bookcover"
+        android:contentDescription="Cover Image" />
+
+    <Button
+        android:id="@+id/saveBookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a book"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/loginbtn"
+        android:backgroundTint="@color/red"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_by_name"
+        android:title="Nom" />
+    <item
+        android:id="@+id/filter_by_author"
+        android:title="Auteur" />
+    <item
+        android:id="@+id/filter_by_category"
+        android:title="Catégorie" />
+</menu>

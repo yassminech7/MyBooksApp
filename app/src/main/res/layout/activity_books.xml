@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".BooksActivity">
+
+    <TextView
+        android:id="@+id/greetingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, username!"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="26dp"
+        android:textColor="@color/red"/>
+    <TextView
+        android:id="@+id/greetingTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greetingTextView"
+        android:text="What do you want to read today?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Barre de recherche -->
+        <SearchView
+            android:id="@+id/searchViewBooks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:queryHint="Find a book..." />
+
+        <ImageView
+            android:id="@+id/filterIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/filtericon"
+            android:contentDescription="Filter icon"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBooks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/item_book" />
+
+    <ImageView
+        android:id="@+id/addBookButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:src="@drawable/plusicon"
+        android:clickable="true"
+        android:focusable="true"/>
+    <ImageView
+        android:id="@+id/cartIcon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/carticon"
+        android:contentDescription="Cart icon"
+        android:clickable="true"
+        android:focusable="true" />
+    <ImageView
+        android:id="@+id/userBooksIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="end"
+        android:src="@drawable/bookicon"
+        android:contentDescription="User books icon"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="48dp" />
+
+
+
+</LinearLayout>
